@@ -1,5 +1,14 @@
 #!/bin/zsh
 
+if [[ $(command -v antigen) ]]; then
+	antigen bundle aubreypwd/zsh-plugin-require@1.0.1
+	antigen apply
+
+	require "ffmpeg" "brew reinstall ffmpeg" "brew" # Automatically install ffmpeg using homebrew.
+fi
+
+if ! [[ -x $(command -v ffmpeg) ]]; then >&2 echo "Please install ffmpeg to use cvideo." && return; fi
+
 ###
  # Compress video.
  #
