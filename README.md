@@ -34,6 +34,10 @@ antigen bundle aubreypwd/zsh-plugin-cvideo
 
 ## Changelog
 
+### 1.0.2
+
+- Don't bail if, ultimately, `ffmpeg` is not found
+
 ### 1.0.1
 
 - Tries to automatically install `ffmpeg` for you if you are using `antigen` method using `brew`
