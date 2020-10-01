@@ -7,8 +7,6 @@ if [[ $(command -v antigen) ]]; then
 	require "ffmpeg" "brew reinstall ffmpeg" "brew" # Automatically install ffmpeg using homebrew.
 fi
 
-if ! [[ -x $(command -v ffmpeg) ]]; then >&2 echo "Please install ffmpeg to use cvideo." && return; fi
-
 ###
  # Compress video.
  #
@@ -18,11 +16,7 @@ if ! [[ -x $(command -v ffmpeg) ]]; then >&2 echo "Please install ffmpeg to use 
  # E.g:  compress-video *.mov
  ##
 function cvideo {
-	if ! [[ -x $(command -v ffmpeg) ]]; then
-		echo "Please install ffmpeg:";
-		echo "\tHomebrew: brew install ffmpeg"
-		return
-	fi
+	if ! [[ -x $(command -v ffmpeg) ]]; then >&2 echo "Please install ffmpeg to use cvideo." && return; fi
 
 	local f=$(basename -- "$1")
 	local e="${f##*.}"
