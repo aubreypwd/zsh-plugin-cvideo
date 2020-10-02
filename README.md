@@ -25,7 +25,7 @@ antigen bundle aubreypwd/zsh-plugin-cvideo@1.0.0
 Install the package on `master`:
 
 ```bash
-antigen bundle aubreypwd/zsh-plugin-cvideo
+antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo
 ```
 
 ...and contribute upstream by working in `$HOME/.antigen/bundles/aubreypwd/zsh-plugin-video`.
