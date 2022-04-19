@@ -36,6 +36,8 @@ antigen bundle ssh://git@github.com/aubreypwd/zsh-plugin-cvideo
 
 ## Changelog
 
+Releases beyond these were moved to Github releases.
+
 ### 1.0.2
 
 - Don't bail if, ultimately, `ffmpeg` is not found
