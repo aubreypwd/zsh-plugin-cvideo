@@ -12,6 +12,8 @@ cvideo <video-file>
 
 - `ffmpeg`
 
+If you have https://github.com/aubreypwd/zsh-plugin-require and [homebrew](https://brew.sh) installed, we'll take care of installing dependancies.
+
 ## Install
 
 Using [antigen](https://github.com/zsh-users/antigen):

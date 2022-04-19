@@ -1,9 +1,6 @@
 #!/bin/zsh
 
-if [[ $(command -v antigen) ]]; then
-	antigen bundle aubreypwd/zsh-plugin-require@1.0.1
-	antigen apply
-
+if [[ -x $(command -v require) ]]; then
 	require "ffmpeg" "brew reinstall ffmpeg" "brew" # Automatically install ffmpeg using homebrew.
 fi
 
